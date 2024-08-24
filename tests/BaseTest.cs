@@ -16,9 +16,9 @@ namespace alttrashcat_tests_csharp.tests
         [OneTimeSetUp]
         public void SetupAppium()
         {
-            String BROWSERSTACK_USERNAME = Environment.GetEnvironmentVariable("BROWSERSTACK_USERNAME");
-            String BROWSERSTACK_ACCESS_KEY = Environment.GetEnvironmentVariable("BROWSERSTACK_ACCESS_KEY");
-            String BROWSERSTACK_APP_ID_SDK_201 = Environment.GetEnvironmentVariable("BROWSERSTACK_APP_ID_SDK_201");
+            String BROWSERSTACK_USERNAME = Environment.GetEnvironmentVariable("mastersinteracti_JeA0cV");
+            String BROWSERSTACK_ACCESS_KEY = Environment.GetEnvironmentVariable("vxeq9NiCFqChsJrAqxkr");
+            String BROWSERSTACK_APP_ID_SDK_201 = Environment.GetEnvironmentVariable("bs://b42c0c41c7616e08d9c61ac18da3e3b62d84f5c8");
 
             // Use dot net bindings v4.0.0 or above
             AppiumOptions capabilities = new AppiumOptions();
@@ -32,12 +32,13 @@ namespace alttrashcat_tests_csharp.tests
             browserstackOptions.Add("accessKey", BROWSERSTACK_ACCESS_KEY);
             capabilities.AddAdditionalCapability("bstack:options", browserstackOptions);
             capabilities.AddAdditionalCapability("platformName", "android");
-            capabilities.AddAdditionalCapability("platformVersion", "11.0");
-            capabilities.AddAdditionalCapability("appium:deviceName", "Samsung Galaxy S21");
+            capabilities.AddAdditionalCapability("platformVersion", "13.0");
+            capabilities.AddAdditionalCapability("appium:deviceName", "Samsung Galaxy S23 Ultra");
             // capabilities.AddAdditionalCapability("platformName", "ios");
             // capabilities.AddAdditionalCapability("platformVersion", "16");
             // capabilities.AddAdditionalCapability("appium:deviceName", "iPhone 14");
             capabilities.AddAdditionalCapability("appium:app", BROWSERSTACK_APP_ID_SDK_201);
+            browserstackOptions.Add("appiumVersion", "2.6.0");
 
             browserStackLocal = new Local();
             List<KeyValuePair<string, string>> bsLocalArgs = new List<KeyValuePair<string, string>>() {
