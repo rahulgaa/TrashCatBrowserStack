@@ -16,9 +16,9 @@ namespace alttrashcat_tests_csharp.tests
         [OneTimeSetUp]
         public void SetupAppium()
         {
-            String BROWSERSTACK_USERNAME = Environment.GetEnvironmentVariable("mastersinteracti_JeA0cV");
-            String BROWSERSTACK_ACCESS_KEY = Environment.GetEnvironmentVariable("vxeq9NiCFqChsJrAqxkr");
-            String BROWSERSTACK_APP_ID_SDK_201 = Environment.GetEnvironmentVariable("bs://b42c0c41c7616e08d9c61ac18da3e3b62d84f5c8");
+            String BROWSERSTACK_USERNAME = Environment.GetEnvironmentVariable("mastersinteracti_Y1Vyl2");
+            String BROWSERSTACK_ACCESS_KEY = Environment.GetEnvironmentVariable("ioxNqwx9szkmCuEmFA9y");
+            String BROWSERSTACK_APP_ID_SDK_201 = Environment.GetEnvironmentVariable("bs://cd393c0908bea76d50d5ce9f66014876dae5db13");
 
             // Use dot net bindings v4.0.0 or above
             AppiumOptions capabilities = new AppiumOptions();
