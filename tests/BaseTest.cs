@@ -16,9 +16,9 @@ namespace alttrashcat_tests_csharp.tests
         [OneTimeSetUp]
         public void SetupAppium()
         {
-            String BROWSERSTACK_USERNAME = Environment.GetEnvironmentVariable("mastersinteracti_Y1Vyl2");
-            String BROWSERSTACK_ACCESS_KEY = Environment.GetEnvironmentVariable("ioxNqwx9szkmCuEmFA9y");
-            String BROWSERSTACK_APP_ID_SDK_201 = Environment.GetEnvironmentVariable("bs://cd393c0908bea76d50d5ce9f66014876dae5db13");
+            String BROWSERSTACK_USERNAME = Environment.GetEnvironmentVariable("BROWSERSTACK_USERNAME");
+            String BROWSERSTACK_ACCESS_KEY = Environment.GetEnvironmentVariable("BROWSERSTACK_ACCESS_KEY");
+            String BROWSERSTACK_APP_ID_SDK_201 = Environment.GetEnvironmentVariable("BROWSERSTACK_APP_ID_SDK_201");
 
             // Use dot net bindings v4.0.0 or above
             AppiumOptions capabilities = new AppiumOptions();
@@ -38,7 +38,9 @@ namespace alttrashcat_tests_csharp.tests
             // capabilities.AddAdditionalCapability("platformVersion", "16");
             // capabilities.AddAdditionalCapability("appium:deviceName", "iPhone 14");
             capabilities.AddAdditionalCapability("appium:app", BROWSERSTACK_APP_ID_SDK_201);
-            browserstackOptions.Add("appiumVersion", "2.6.0");
+            browserstackOptions.Add("deviceOrientation", "portrait");
+            browserstackOptions.Add("appiumVersion", "2.4.1");
+            
 
             browserStackLocal = new Local();
             List<KeyValuePair<string, string>> bsLocalArgs = new List<KeyValuePair<string, string>>() {
