@@ -27,4 +27,4 @@ jobs:
 
       - name: 'Running tests on BrowserStack'
         run:
-          dotnet test --filter "StartPageTests" /Users/mastersinteractive/Desktop/Alt-Brwserstack/TrashCatBrowserStack/TrashCatBrowserStack.generated.sln
+          dotnet test /Users/mastersinteractive/Desktop/Alt-Brwserstack/TrashCatBrowserStack/TrashCatBrowserStack.generated.sln
