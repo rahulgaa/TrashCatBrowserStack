@@ -23,8 +23,8 @@ jobs:
           dotnet-version: '8.0'
           
       - name: Restore dependencies
-        run: dotnet restore
+        run: dotnet restore /Users/mastersinteractive/Desktop/Alt-Brwserstack/TrashCatBrowserStack/TrashCatBrowserStack.generated.sln
 
       - name: 'Running tests on BrowserStack'
         run:
-          dotnet test --filter "StartPageTests"
+          dotnet test --filter "StartPageTests" /Users/mastersinteractive/Desktop/Alt-Brwserstack/TrashCatBrowserStack/TrashCatBrowserStack.generated.sln
