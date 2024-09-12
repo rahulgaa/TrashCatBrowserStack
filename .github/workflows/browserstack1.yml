@@ -12,7 +12,7 @@ env:
 jobs:
   csharp-tests-job:
     name: 'CSharp tests on BrowserStack'
-    runs-on: [self-hosted, services]
+    runs-on: [self-hosted]
     steps:
       - name: 'Checkout the repository'
         uses: actions/checkout@v2
