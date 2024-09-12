@@ -32,14 +32,14 @@ namespace alttrashcat_tests_csharp.tests
             browserstackOptions.Add("accessKey", BROWSERSTACK_ACCESS_KEY);
             capabilities.AddAdditionalCapability("bstack:options", browserstackOptions);
             capabilities.AddAdditionalCapability("platformName", "android");
-            capabilities.AddAdditionalCapability("platformVersion", "13.0");
-            capabilities.AddAdditionalCapability("appium:deviceName", "Samsung Galaxy S23 Ultra");
+            capabilities.AddAdditionalCapability("platformVersion", "11.0");
+            capabilities.AddAdditionalCapability("appium:deviceName", "OnePlus 9");
             // capabilities.AddAdditionalCapability("platformName", "ios");
             // capabilities.AddAdditionalCapability("platformVersion", "16");
             // capabilities.AddAdditionalCapability("appium:deviceName", "iPhone 14");
             capabilities.AddAdditionalCapability("appium:app", BROWSERSTACK_APP_ID_SDK_201);
             browserstackOptions.Add("deviceOrientation", "portrait");
-            browserstackOptions.Add("appiumVersion", "2.4.1");
+            browserstackOptions.Add("appiumVersion", "2.6.0");
             
 
             browserStackLocal = new Local();
